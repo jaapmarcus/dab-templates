@@ -10,7 +10,7 @@ ServerKeyBits 1024
 SyslogFacility AUTH
 LogLevel INFO
 LoginGraceTime 30
-PermitRootLogin no
+PermitRootLogin without-password
 StrictModes yes
 RSAAuthentication yes
 PubkeyAuthentication yes
@@ -32,8 +32,4 @@ UsePAM no
 ClientAliveInterval 60
 ClientAliveCountMax 5
 MaxAuthTries 2
-Match Address 10.0.0.0/16
-PermitRootLogin without-password
-Match Address 127.0.0.1
-PermitRootLogin without-password
 
